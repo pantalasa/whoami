@@ -10,7 +10,7 @@ jobs:
 
   main:
     name: Main Process
-    runs-on: ubuntu-latest
+    runs-on: lunar
     env:
       GO_VERSION: stable
       GOLANGCI_LINT_VERSION: v2.1.2
