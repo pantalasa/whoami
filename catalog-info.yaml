@@ -1,0 +1,19 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: whoami
+  description: Pantalasa whoami service
+  labels:
+    earthly.dev/demo: true
+  annotations:
+    earthly.dev/service-discovery: whoami
+  tags:
+    - golang
+  links:
+    - url: https://grafana.dev.pantalasa.org
+      title: Grafana central panel
+spec:
+  type: whoami
+  lifecycle: production
+  owner: eng-team
+  system: public-websites
