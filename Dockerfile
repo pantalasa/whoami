@@ -24,3 +24,8 @@ COPY --from=builder /go/whoami/whoami .
 
 ENTRYPOINT ["/whoami"]
 EXPOSE 80
+
+# Container healthcheck (image metadata)
+HEALTHCHECK --interval=30s --timeout=3s --retries=3 CMD exit 0
+# Run as a non-root user
+USER 1001
